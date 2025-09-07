@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile & Past Jobs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* ---------- โปรไฟล์ ---------- */
+    .profile-card {
+      width: 70%;
+      margin: 0 auto 30px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-img img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .profile-info h3 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    .profile-info p {
+      margin: 5px 0;
+      color: #666;
+    }
+
+    /* ---------- การ์ดงาน ---------- */
+    .job-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px auto;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 70%;
+    }
+
+    .job-info {
+      max-width: 75%;
+    }
+
+    .job-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .job-desc {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .job-status {
+      font-size: 14px;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .done {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+
+    .cancelled {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- โปรไฟล์ -->
+  <div class="profile-card">
+    <div class="profile-header">
+      <div class="profile-img">
+        <img src="https://us-fbcloud.net/picpost/data/333/333164-5c3c833cb28c3.jpg" alt="Profile Image">
+      </div>
+      <div class="profile-info">
+        <h3>Sorrawich Pao</h3>
+        <p>ตำแหน่ง: Full Stack Developer</p>
+        <p>อีเมล: example@email.com</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- การ์ดงานที่เคยถูกว่าจ้าง -->
+  <h2>งานที่เคยถูกว่าจ้าง</h2>
+  <div class="job-card">
+    <div class="job-info">
+      <div class="job-title">Swagger Upload Service</div>
+      <div class="job-desc">
+        Swagger Upload Service: a Node.js service to upload and validate OpenAPI specs JSON/YAML with JWT auth, RBAC, file uploads, MongoDB, Docker, GitLab CI/CD
+      </div>
+    </div>
+    <div class="job-status done">เสร็จสิ้น</div>
+  </div>
+
+  <div class="job-card">
+    <div class="job-info">
+      <div class="job-title">Design IT Web</div>
+      <div class="job-desc">
+        งานออกแบบและพัฒนาเว็บไซต์ระบบภายในองค์กร ฝั่ง UI/UX และการเชื่อมต่อ API
+      </div>
+    </div>
+    <div class="job-status cancelled">ยกเลิกการว่าจ้าง</div>
+  </div>
+
+</body>
+</html>
+
+
+
